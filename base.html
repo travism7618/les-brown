@@ -11,7 +11,7 @@
 
         html {
             height: 100%;
-            background: linear-gradient(to right, black, blue, black);
+            background: linear-gradient(to bottom right, blue,black, green);
             border-style: groove;
         }
 
@@ -41,10 +41,12 @@
             text-shadow: 5px 5px 10px black;
             animation-name: big;
             animation-duration: 3s;
+            transition: 1s;
         }
 
-        h1:hover {
+        h1:hover, h2:hover{
             transform: scale(2, 2);
+            color: green;
         }
     </style>
 </head>
