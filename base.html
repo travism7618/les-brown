@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body {
-     border-style: groove;
-     height:100%;
-     margin:0;
-}
-div{
-    width: 100%px;
-    height: 100px;
-    background: grey;
     
-}
-div#one{
-    background: #11998e;
-    transition: background 0.5s;
-    
-    
-}
+    <style>
 
-div#one:hover {
-     background: #38ef7d;
-}
+        * {
+            text-align: center;
+        }
 
-div#two{
-    
-}
+        html {
+            height: 100%;
+            background: linear-gradient(to right, black, blue, black);
+            border-style: groove;
+        }
 
-h1 {
-     text-align: center;
-}
-html{
-    height:100%;
-}
+        h1 {
+            font-family:'DEATHNOTE Font';
+            color: white;
+            text-shadow: 5px 5px 10px black;
+            animation-name: big;
+            animation-duration: 3s;
+            transition: 1s;
+        }
 
-</style>
+        @keyframes big {
+            0% {
+                transform: scale(1, 1);
+            }
+            50% {
+                transform: scale(2, 2);
+            }
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        h2 {
+            color: white;
+            text-shadow: 5px 5px 10px black;
+            animation-name: big;
+            animation-duration: 3s;
+        }
+
+        h1:hover {
+            transform: scale(2, 2);
+        }
+    </style>
 </head>
+
 <body>
-    <p> The </p>
-<h1>COLORS WITH TRANSITION</h1>
-<div id="one"></div>
-<h1>Colors with animation</h1>
-<div id="two"></div>
+    <h1>GODZILLA</h1> <br>
+    <h2>King of Monsters</h2>
+
+
 
 </body>
+
 </html>
